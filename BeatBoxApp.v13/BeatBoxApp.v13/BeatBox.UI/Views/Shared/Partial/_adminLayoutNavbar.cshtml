@@ -1,0 +1,104 @@
+﻿<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a style="color:#8e2727;" class="navbar-brand" href="index.html">BeatBOX | Admin Panel</a>
+    </div>
+    <ul class="nav navbar-top-links navbar-right">
+            <li><span style="color:palevioletred">@HttpContext.Current.User.Identity.Name.Split('-')[2]</span></li>
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-user">
+                <li>
+                    <a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <a href="/account/signout"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                </li>
+            </ul>
+            <!-- /.dropdown-user -->
+        </li>
+    </ul>
+
+    <div class="navbar-default sidebar" role="navigation">
+
+        <div class="sidebar-nav navbar-collapse">
+
+            <ul class="nav" id="side-menu">
+                <li class="scr" id="category">
+                    <a><i class="glyphicon glyphicon-th"></i> Kategoriler <span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level crudlist">
+                        <li data-toggle="modal" data-target="#InsertCategoryModel" class="alert-success" id="Insert-Category">
+                            <a>Ekle</a>
+                        </li>
+                        <li data-toggle="modal" data-target="#UpdateCategoryModel" class="alert-warning" id="Update-Category">
+                            <a>Ekle</a>
+                        </li>
+                    </ul>
+                    <!-- /.nav-second-level -->
+                </li>
+                <li class="scr" id="song">
+                    <a><i class="glyphicon glyphicon-headphones"></i> Şarkılar<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level crudlist">
+                        <li data-toggle="modal" data-target="#InsertSongModel" class="alert-success" id="Insert-Song">
+                            <a>Ekle</a>
+                        </li>
+                        <li data-toggle="modal" data-target="#UpdateSongModel" class="alert-warning" id="Update-Song">
+                            <a>Güncelle</a>
+                        </li>
+                    </ul>
+                    <!-- /.nav-second-level -->
+                </li>
+                <li class="scr" id="songwriter">
+                    <a><i class="glyphicon glyphicon glyphicon-pencil"></i> Söz Yazarları<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level crudlist">
+                        <li>
+                            <a href="/admin/category/insert">Add</a>
+                        </li>
+                        <li>
+                            <a href="/admin/category/list">Güncelle</a>
+                        </li>
+                    </ul>
+                    <!-- /.nav-second-level -->
+                </li>
+                <li class="scr" id="melodist">
+                    <a><i class="glyphicon glyphicon-volume-up"></i> Besteciler<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level crudlist">
+                        <li>
+                            <a href="/admin/category/insert">Add</a>
+                        </li>
+                        <li>
+                            <a href="/admin/category/list">Güncelle</a>
+                        </li>
+                    </ul>
+                    <!-- /.nav-second-level -->
+                </li>
+                <li class="scr" id="singer">
+                    <a><i class="glyphicon glyphicon-user"></i> Şarkıcılar <span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level crudlist">
+                        <li>
+                            <a href="/admin/category/insert">Add</a>
+                        </li>
+                        <li>
+                            <a href="/admin/category/list">Güncelle</a>
+                        </li>
+                    </ul>
+                    <!-- /.nav-second-level -->
+                </li>
+            </ul>
+
+            <label class="switch">
+                <input id="switch-btn" type="checkbox" checked>
+                <span class="slider round"></span>
+            </label>
+
+        </div>
+    </div>
+</nav>

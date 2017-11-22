@@ -1,0 +1,61 @@
+﻿
+
+<div class="modal fade" id="InsertSongModel" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 style="color:firebrick" class="modal-title">BeatBOX</h4>
+            </div>
+            <div class="modal-body">
+                <h3 style="color:palevioletred">Şarkı Ekleme Paneli</h3>
+            </div>
+            <form id="InsertForm">
+                <div class="col-md-offset-1">
+                    <div class="form-group">
+                        <input name="Name" type="text" placeholder="Şarkı Adı Giriniz..." />
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <input name="ReleaseDate" type="text" placeholder="Çıkış Tarihi" />
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <input name="CategoryId" type="text" placeholder="Category Id Giriniz..." />
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <input name="MelodistId" type="text" placeholder="Besteci Id Giriniz..." />
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <input name="SongWriterId" type="text" placeholder="Söz Yazarı Id Giriniz..." />
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <input name="SingerId" type="text" placeholder="Şarkıcı Id Giriniz..." />
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <textarea name="Description" rows="7" cols="100" placeholder="Şarkı Açıklaması Giriniz...(İsteğe bağlı)"></textarea>
+                    </div>
+                    <br/>
+                    <div class="form-group">
+                        <textarea name="Lyrics" rows="7" cols="100" placeholder="Şarkı Sözü Giriniz...(İsteğe bağlı)"></textarea>
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <div>
+                            <input id="InsertSongModel" style="display:inline-block" class="btn btn-success" type="submit" value="Ekle" />
+                            <button id="CloseSongModel" type="button" class="btn btn-danger" data-dismiss="modal">İptal</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+

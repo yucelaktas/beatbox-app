@@ -1,0 +1,42 @@
+﻿html {
+    height: 100%;
+}
+
+body {
+    background-color: #808080;
+    height: 100%;
+    position: relative;
+}
+
+#bg-img {
+    background-repeat: no-repeat;
+    background-image: url('../Images/page-bg.jpg');
+    min-height: 100%;
+    min-width: 100%;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -1;
+    position: absolute;
+}
+
+#header-img {
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 5;
+    border-radius: 5%;
+    border: 1px gold solid;
+}
+
+#jumbo{
+    border: 1px gold solid;
+    border-radius: 5%;
+}
+
+#content{
+    background: -webkit-linear-gradient(-90deg, #ffffff, #ffffff, #f29400);
+}
+
+#ads{
+    background-color: white;
+    min-height: 100px;
+}
